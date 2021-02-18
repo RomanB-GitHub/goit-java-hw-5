@@ -1,4 +1,4 @@
-public class Level {
+class Level {
     private int width;
     private int height;
 
@@ -20,19 +20,19 @@ public class Level {
 class LevelLoader {
     public void load(Level level) throws LevelTooBigException {
         int sqr = level.getWidth() * level.getHeight();
-        if (sqr < 100000){
-        System.out.println("Level loaded");
-        }else {
+        if (sqr < 100000) {
+            System.out.println("Level loaded");
+        } else {
             throw new LevelTooBigException();
         }
     }
 }
-class LevelTooBigException extends Exception{
-    LevelTooBigException(){
+
+class LevelTooBigException extends Exception {
+    LevelTooBigException() {
 
     }
 }
-
 
 
 class LevelLoaderTest {
