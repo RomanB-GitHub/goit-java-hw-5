@@ -1,4 +1,4 @@
-public class Level {
+class Level {
     private int width;
     private int height;
 
